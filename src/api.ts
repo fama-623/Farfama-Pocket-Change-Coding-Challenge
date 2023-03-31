@@ -18,7 +18,7 @@ export type SearchResultItem = {
   Poster: string;
 };
 
-const OMDB_API_URL = "http://www.omdbapi.com";
+const OMDB_API_URL = "https://www.omdbapi.com";
 const OMDB_API_KEY = import.meta.env.VITE_OMDB_API_KEY;
 
 export const searchMovies = async (query: string): Promise<SearchResult> => {
