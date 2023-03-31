@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { SearchResultItem } from "../api";
-import { addFavorite, removeFavorite } from "../reducers/favoritesReducer";
+import { addFavorite, removeFavorite, selectFavorites } from "../reducers/favoritesReducer";
 
 interface Props {
   movie: SearchResultItem;
@@ -8,10 +8,8 @@ interface Props {
 
 const MovieCard: React.FC<Props> = ({ movie }) => {
   const dispatch = useDispatch();
-  const favorites = useSelector((state: any) => state.favorites.items);
-  const isFavorite = favorites.some(
-    (favMovie: { imdbID: string }) => favMovie.imdbID === movie.imdbID
-  );
+  const favorites = useSelector(selectFavorites);
+  const isFavorite = favorites.some((favMovie) => favMovie.imdbID === movie.imdbID);
 
   const handleAddFavorite = () => {
     dispatch(addFavorite(movie));
@@ -32,10 +30,7 @@ const MovieCard: React.FC<Props> = ({ movie }) => {
       ) : (
         <button onClick={handleAddFavorite}>Add to favorites</button>
       )}
-      <p>
-        Current favorites:{" "}
-        {favorites.map((movie: { Title: any }) => movie.Title).join(", ")}
-      </p>
+      <p>Current favorites: {favorites.map((favMovie) => favMovie.Title).join(', ')}</p>
     </div>
   );
 };

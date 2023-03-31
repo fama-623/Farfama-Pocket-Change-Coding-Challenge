@@ -3,7 +3,6 @@ import { searchMovies, SearchResult } from "./api";
 import SearchForm from "./components/SearchForm";
 import MovieCard from "./components/MovieCard";
 
-
 function App() {
   const [searchResults, setSearchResults] = useState<SearchResult["Search"]>(
     []
@@ -36,4 +35,3 @@ function App() {
 }
 
 export default App;
-

@@ -17,10 +17,7 @@ const SearchForm: React.FC<SearchFormProps> = ({ onSubmit }) => {
       onSubmit={handleSubmit}
       className="flex items-center rounded-full border-2 border-gray-300 w-full max-w-md md:max-w-lg px-4 py-2 flex-shrink-0 hover:shadow-md "
     >
-      <label
-        className="mr-4 text-md font-medium text-gray-600"
-        htmlFor="query"
-      >
+      <label className="mr-4 text-md font-medium text-gray-600" htmlFor="query">
         Search:
       </label>
       <input
