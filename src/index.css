@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 80px;
+}
+
+.pagination a {
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  color: #4a5568;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pagination .active-class {
+  transform: scale(1.5);
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #edf2f7;
+  border-color: #cbd5e0;
+  color: #4a5568;
+}
+
+.pagination .previous a:before {
+  content: "\2190";
+  margin-right: 0.5rem;
+}
+
+.pagination .next a:after {
+  content: "\2192";
+  margin-left: 0.5rem;
+}
