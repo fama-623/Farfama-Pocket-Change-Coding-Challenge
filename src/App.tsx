@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="flex justify-center w-full">
       <div>
-        <div className=" top-0 w-screen	bg-slate-50	 z-10 shadow-lg	">
+        <div className=" top-0 w-screen	bg-slate-50	z-10 shadow-lg p-5">
           <div className="flex flex-col items-center justify-center py-16 ">
             <h1 className="text-4xl font-bold py-8">Movie Search App</h1>
             <SearchForm onSubmit={handleSearch} />
