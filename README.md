@@ -7,6 +7,7 @@ list of movies to the user.
 <img width="1411" alt="Movie Search Homepage" src="https://user-images.githubusercontent.com/32600047/229345072-d8410db2-766d-4b40-95bc-a826e5ecc177.png">
 
 Try it live here -> https://farfama-pocket-change-coding-challenge.vercel.app/
+View the Figma Design Doc here -> https://www.figma.com/file/M11Kw3eWqb3R48MepjqPWE/Movie-Search-Design-Doc?node-id=0-1
 
 ## Features
 - Search for movies using a search bar.
