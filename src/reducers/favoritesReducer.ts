@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { SearchResultItem } from '../api';
+import { SearchResultItem } from '../api/omdbApi';
 
 interface FavoritesState {
   items: SearchResultItem[];

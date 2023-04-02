@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { searchMovies, SearchResult } from "../api";
+import { searchMovies, SearchResult } from "../api/omdbApi";
 
 export function useMovieSearch() {
   const [searchResults, setSearchResults] = useState<SearchResult["Search"]>([]);
