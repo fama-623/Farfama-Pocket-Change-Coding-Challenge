@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@types/react-redux": "^7.1.25",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-paginate": "^8.1.5",
@@ -27,6 +28,7 @@
     "@babel/register": "^7.21.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
+    "@types/aos": "^3.0.4",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/redux-mock-store": "^1.0.3",

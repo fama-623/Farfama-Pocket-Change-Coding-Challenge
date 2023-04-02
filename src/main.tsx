@@ -7,6 +7,8 @@ import "./index.css";
 import FavoritesPage from './pages/FavoritesPage';
 import Navbar from './components/Navbar';
 
+
+
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <Provider store={store}>
     <BrowserRouter>

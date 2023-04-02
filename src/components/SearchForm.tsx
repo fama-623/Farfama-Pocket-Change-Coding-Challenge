@@ -17,8 +17,11 @@ const SearchForm: React.FC<SearchFormProps> = ({ onSubmit }) => {
 
     <div className="top-0 w-screen bg-green-500 z-10 shadow-lg p-5">
       <div className="flex flex-col items-center justify-center py-16 ">
-        <h1 className="text-4xl font-bold text-white py-12">Find your next favorite film! </h1>
+        <h1 className="text-4xl font-bold text-white py-12" data-aos="zoom-in" data-aos-duration="300">Find your next favorite film! </h1>
         <form
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="300"
           onSubmit={handleSubmit}
           className="flex items-center rounded-full border-2 border-gray-300 w-full max-w-md md:max-w-lg px-4 py-2 flex-shrink-0 hover:shadow-md bg-slate-50 "
         >

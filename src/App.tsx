@@ -1,11 +1,26 @@
+import { useEffect } from "react";
 import ReactPaginate from "react-paginate";
 import SearchForm from "./components/SearchForm";
 import MovieCard from "./components/MovieCard";
 import { useMovieSearch } from "./hooks/useMovieSearch";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 700,
+      easing: 'ease-out-cubic',      
+    });
+  });
+
   const { searchResults, totalPages, handleSearch, handlePageChange } =
     useMovieSearch();
+
 
   return (
     <div className="flex justify-center w-full ">
